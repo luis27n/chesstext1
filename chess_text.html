@@ -1,0 +1,37 @@
+<html>
+    <head>
+      <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+       <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+       <script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"> 
+         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"> </script>
+         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"> </script>
+         <link rel="stylesheet" type="text/css" href="style.css">
+         <meta name="viewpor" conter="width=device-width, initial-scale=1">
+         <link href="https://fonts.cdnfonts.com/css/paper-johnny" rel="stylesheet">  
+    </head>
+    <body>
+        <div class="container">
+            <button id="salir" onclick="salir()" class="glyphicon glyphicon-log-out btn-danger btn btn-danger">salir</button>
+           <center>
+             <h1 class="header">
+                Chess text<sup>
+                    <img src="logo.png">
+                </sup>
+             </h1>
+             <h3 id="usuario_saludo" class="color_white"></h3>
+
+             <div class="form-group input_div_sala">
+                <label class="color_white">#crea una sala</label>
+                <input type="text" id="sala_nombre" class="form-control" placeholder="#nombre de la sala">
+             </div>
+
+             <button onclick="sala_nueva()" class="btn btn-success">#crear</button>
+
+             <h3 class="color_white">#SALASDETENDENCIA</h3>
+             <div id="salida" style="text-align:left ;margin-bottom: 70px;"></div>
+           </center> 
+         </div>
+         <script src="chess_text_sala.js"></script>
+    </body>
+</html>
